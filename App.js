@@ -1,20 +1,27 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import { NavigationContainer } from '@react-navigation/native';
+import Inicio from './components/Inicio';
+import Persona from './components/Persona';
+import Edad from './components/Edad';
+import Universidades from './components/Universidad';
+import Clima from './components/Clima';
+import NoticiasWordPress from './components/WordPress';
+import Perfil from './components/Perfil';
+
+const Drawer = createDrawerNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+  <NavigationContainer>
+    <Drawer.Navigator>
+      <Drawer.Screen name="INICIO" component={Inicio} />
+      <Drawer.Screen name="PERSONA" component={Persona} />
+      <Drawer.Screen name="EDAD" component={Edad} />
+      <Drawer.Screen name="UNIVERSIDAD" component={Universidades} />
+      <Drawer.Screen name="CLIMA" component={Clima} />
+      <Drawer.Screen name="NOTICIASWORDPRESS" component={NoticiasWordPress} />
+      <Drawer.Screen name="PERFIL" component={Perfil} />
+    </Drawer.Navigator>
+  </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

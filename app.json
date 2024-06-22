@@ -4,7 +4,7 @@
     "slug": "practica-6",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/Daurin.jpg",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -16,12 +16,18 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/Daurin.jpg",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.dauringonzalez.practica6"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/Daurin.jpg"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "00048509-222e-418a-8fd1-9c95ea75b3a0"
+      }
     }
   }
 }
